@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Validacion {
     Scanner scanner = new Scanner(System.in);
 
-    public int menuPrincipal(){
+    public int menu(){
         int pos = 0;
         try{
             pos = scanner.nextInt();
