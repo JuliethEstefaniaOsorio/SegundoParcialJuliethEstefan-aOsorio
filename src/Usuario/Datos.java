@@ -75,8 +75,7 @@ public class Datos {
             default:
                 System.out.println("Opcion no valida");
         }
-
-
         return null;
     }
+
 }

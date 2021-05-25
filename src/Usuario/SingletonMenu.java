@@ -2,10 +2,10 @@ package Usuario;
 
 public class SingletonMenu {
     private static SingletonMenu singletonMenu;
-    private String menuPrincipal;
-    private String menuVehiculos;
-    private String menuColor;
-    private String menuPuntosFinal;
+    private final String menuPrincipal;
+    private final String menuVehiculos;
+    private final String menuColor;
+    private final String menuPuntosFinal;
 
     private SingletonMenu() {
         this.menuPrincipal = "\n¡¡¡Bienvenido a su Garaje Artemisa!!!\n\t\tSu Garaje Confiable\nSeleccione una opción:" +
@@ -34,7 +34,11 @@ public class SingletonMenu {
         return this.menuVehiculos;
     }
 
-    public String getMenuColor() { return this.menuColor; }
+    public String getMenuColor() {
+        return this.menuColor;
+    }
 
-    public String getMenuPuntosFinal() { return this.menuPuntosFinal; }
+    public String getMenuPuntosFinal() {
+        return this.menuPuntosFinal;
+    }
 }
